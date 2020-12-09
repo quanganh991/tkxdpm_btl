@@ -1,13 +1,14 @@
 var express = require('express');
-var readjson = require('../../readjson.js')
 var router = express.Router();
 module.exports = router;
 
+var getAllStationRepo = require('../../repos/01_repo_get_all_station');
 router.get('/', (req, res) => {// /all_station/
-    // var newest = readjson.loadByNewestOption(config.LIMIT_OPTION);
-    //
-    // readTextFile("park.json", function (text) {
-    //                 document.writeln(text);
-    //             });
-    //
+    var allParks = getAllStationRepo.getAllStation();
+    Promise.all([allParks]).then(([all_parks]) => {
+        var vm = {
+            allParks: all_parks,
+        };
+        res.render('index', vm);
+    });
 });

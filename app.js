@@ -4,8 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+
 
 var app = express();
 
@@ -19,35 +18,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
-
-module.exports = app;
-
-app.listen(62033, () => {
-  console.log('Site running on port 62033');
-});
 
 
 //các đường dẫn để xác định API
 //1.Lấy thông tin toàn bộ bãi xe
-var get_all_station = require('./controller/01_get_all_station/get_all_station.js');
+var get_all_station = require('./controller/01_get_all_station/get_all_station');
 app.use('/all_station', get_all_station);
 
 
@@ -147,3 +128,26 @@ var register_return_bike = require('./controller/18_register_return_bike/registe
 app.use('/register_return_bike', register_return_bike);
 
 
+
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
+
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+module.exports = app;
+
+app.listen(9999, () => {
+  console.log('Site running on port 9999');
+});
