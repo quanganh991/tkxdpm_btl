@@ -1,0 +1,90 @@
+[
+	{
+		"id": "1",
+		"name": "twin bike 1",
+		"type": "twin bike",
+		"weight": "35",
+		"licensePlate": "29A5 3462",
+		"manuafacturingDate": "29/11/2020",
+		"producer": "Honda",
+		"cost": "780000",
+		"idPark": "3"
+	},
+	{
+		"id": "2",
+		"name": "twin bike 2",
+		"type": "twin bike",
+		"weight": "28",
+		"licensePlate": "30NS 12345",
+		"manuafacturingDate": "26/11/2019",
+		"producer": "Yamaha",
+		"cost": "560000",
+		"idPark": "1"
+	},
+	{
+		"id": "3",
+		"name": "twin bike 3",
+		"type": "twin bike",
+		"weight": "30",
+		"licensePlate": "90X4 12325",
+		"manuafacturingDate": "15/2/2019",
+		"producer": "Kawasaki",
+		"cost": "1922000",
+		"idPark": "2"
+	},
+	{
+		"id": "4",
+		"name": "twin bike 4",
+		"type": "twin bike",
+		"weight": "33",
+		"licensePlate": "55K2 6688",
+		"manuafacturingDate": "15/5/2018",
+		"producer": "Lambro",
+		"cost": "980000",
+		"idPark": "2"
+	},
+	{
+		"id": "5",
+		"name": "twin bike 5",
+		"type": "twin bike",
+		"weight": "38",
+		"licensePlate": "15TR 3121",
+		"manuafacturingDate": "30/1/2019",
+		"producer": "Ducati",
+		"cost": "864000",
+		"idPark": "3"
+	},
+	{
+		"id": "6",
+		"name": "twin bike 6",
+		"type": "twin bike",
+		"weight": "24",
+		"licensePlate": "99P3 9621",
+		"manuafacturingDate": "13/1/2020",
+		"producer": "KTM",
+		"cost": "934000",
+		"idPark": "3"
+	},
+	{
+		"id": "7",
+		"name": "twin bike 7",
+		"type": "twin bike",
+		"weight": "29",
+		"licensePlate": "15OS 1368",
+		"manuafacturingDate": "19/6/2020",
+		"producer": "Ducati",
+		"cost": "634000",
+		"idPark": "5"
+	},
+	{
+		"id": "8",
+		"name": "twin bike 8",
+		"type": "twin bike",
+		"weight": "39",
+		"licensePlate": "66G 3220",
+		"manuafacturingDate": "13/2/2020",
+		"producer": "Kawasaki",
+		"cost": "780000",
+		"idPark": "5"
+	}
+]
