@@ -18,13 +18,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-
-
-
 
 //các đường dẫn để xác định API
 //1.Lấy thông tin toàn bộ bãi xe

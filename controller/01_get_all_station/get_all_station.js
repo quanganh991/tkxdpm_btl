@@ -9,6 +9,6 @@ router.get('/', (req, res) => {// /all_station/
         var vm = {
             allParks: all_parks,
         };
-        res.render('index', vm);
+        res.render('01_get_all_station', vm);
     });
 });
