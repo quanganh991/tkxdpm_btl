@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/02_get_all_bike/get_all_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/02_get_all_bike/get_all_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/03_get_detail_station/get_detail_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/03_get_detail_station/get_detail_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/01_get_all_station.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/01_get_all_station.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/02_get_all_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/02_get_all_bike.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/03_get_detail_station.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/03_get_detail_station.pug" afterDir="false" />
-    </list>
+    <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +61,7 @@
       <workItem from="1607567844998" duration="2363000" />
       <workItem from="1607572989321" duration="610000" />
       <workItem from="1607961508878" duration="1199000" />
-      <workItem from="1607999456550" duration="6553000" />
+      <workItem from="1607999456550" duration="6986000" />
     </task>
     <servers />
   </component>
