@@ -10,6 +10,8 @@ router.get('/:id_card', (req, res) => {// /all_station/
         var vm = {
             all_bike: all_bike,
         };
-        res.render('17_get_renting_bike_information', vm);
+        // res.render('17_get_renting_bike_information', vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(all_bike));
     });
 });

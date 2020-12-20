@@ -7,9 +7,11 @@ router.get('/:id_station', (req, res) => {// /all_station/
     var id_station = req.params.id_station;
     var allBike = getAllBike.getAllBike(id_station);
     Promise.all([allBike]).then(([all_bikes]) => {
-        var vm = {
-            allBike: all_bikes
-        };
-        res.render('02_get_all_bike'/*.pug*/, vm);
+        // var vm = {
+            // allBike: all_bikes
+        // };
+        // res.render('02_get_all_bike'/*.pug*/, vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(all_bikes));
     });
 });

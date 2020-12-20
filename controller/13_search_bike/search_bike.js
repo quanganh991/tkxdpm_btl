@@ -11,6 +11,8 @@ router.get('/:keyword', (req, res) => {//
         var vm = {
             allBikeMatch: allBikeMatch,
         };
-        res.render('13_search_bike'/*.pug*/, vm);
+        // res.render('13_search_bike'/*.pug*/, vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(allBikeMatch));
     });
 });

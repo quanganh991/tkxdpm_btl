@@ -11,6 +11,8 @@ router.get('/:id_bike', (req, res) => {//
         var vm = {
             detailBike4Table: detailBike4Table,
         };
-        res.render('15_get_rent_bike_by_id'/*.pug*/, vm);
+        // res.render('15_get_rent_bike_by_id'/*.pug*/, vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(detailBike4Table));
     });
 });

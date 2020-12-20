@@ -8,9 +8,11 @@ router.get('/:id_station', (req, res) => {//
     var detailStation = getDetailStation.getDetailStation(id_station);
     // console.log("----------------id_station = " + id_station);
     Promise.all([detailStation]).then(([detailStation]) => {
-        var vm = {
-            detailStation: detailStation,
-        };
-        res.render('03_get_detail_station'/*.pug*/, vm);
+        // var vm = {
+            // detailStation: detailStation,
+        // };
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(detailStation));
+        // res.render('03_get_detail_station'/*.pug*/, vm);
     });
 });

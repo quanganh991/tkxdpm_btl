@@ -9,11 +9,15 @@ router.post('/', (req, res) => {
         var vm = {
             result: "true"
         };
-        res.render('11_add_bike', vm);
+        // res.render('11_add_bike', vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(vm));
     }).catch(err => {
         var vm = {
             result: "false"
         };
-        res.render('11_add_bike', vm);
+        // res.render('11_add_bike', vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(vm));
     });
 });

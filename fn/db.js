@@ -6,7 +6,7 @@ exports.load = sql => { //select
             host: 'localhost',
             port: 3306,
             user: 'root',
-            password: 'a123456A',
+            password: '',
             database: 'bike_rental'
         });
 
@@ -35,7 +35,7 @@ exports.save = sql => { //insert, delete, update,...
             host: 'localhost',
             port: 3306,
             user: 'root',
-            password: 'a123456A',
+            password: '',
             database: 'bike_rental'
         });
 

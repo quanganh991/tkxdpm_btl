@@ -40,6 +40,8 @@ router.post('/', (req, res) => {//
                 does_id_card_have_enoght_money : does_id_card_have_enoght_money[0]
             }
         }
-        res.render('06_pay_before_rent'/*.pug*/, vm);
+        // res.render('06_pay_before_rent'/*.pug*/, vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(vm));
     });
 });
