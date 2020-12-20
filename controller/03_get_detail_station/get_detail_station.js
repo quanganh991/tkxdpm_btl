@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var jsonFormat = require('../json.js');
 module.exports = router;
 
 var getDetailStation = require('../../repos/03_repo_get_detail_station.js');
@@ -12,7 +13,8 @@ router.get('/:id_station', (req, res) => {//
             // detailStation: detailStation,
         // };
         res.set({ 'content-type': 'application/json; charset=utf-8' });
-        res.end(JSON.stringify(detailStation));
+        // res.end(JSON.stringify(detailStation));
+        jsonFormat.success(req, res, detailStation);
         // res.render('03_get_detail_station'/*.pug*/, vm);
     });
 });

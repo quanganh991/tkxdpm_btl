@@ -1,5 +1,5 @@
 var express = require('express');
-
+var jsonFormat = require('../json.js');
 var router = express.Router();
 module.exports = router;
 
@@ -13,6 +13,7 @@ router.get('/:keyword', (req, res) => {//
         };
         // res.render('13_search_bike'/*.pug*/, vm);
         res.set({ 'content-type': 'application/json; charset=utf-8' });
-        res.end(JSON.stringify(allBikeMatch));
+        // res.end(JSON.stringify(allBikeMatch));
+        jsonFormat.success(req, res, allBikeMatch);
     });
 });
