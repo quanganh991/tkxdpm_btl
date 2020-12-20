@@ -1,0 +1,13 @@
+each each_bike in detailBike
+    p= '"id_bike": ' + each_bike.id_bike
+    p= '"name: " '+ each_bike.name
+    p= '"type: " '+ each_bike.type
+    p= '"weight: " '+ each_bike.weight
+    p= '"licensePlate: " '+ each_bike.licensePlate
+    p= '"manuafacturingDate: " '+ each_bike.manuafacturingDate
+    p= '"producer: " '+ each_bike.producer
+    p= '"cost: " '+ each_bike.cost
+    p= '"idPark: " '+ each_bike.idPark
+    p= (each_bike.type == "ebike" ? '"batteryPercentage: " ' + each_bike.batteryPercentage : "")
+    p= (each_bike.type == "ebike" ? '"loadCycles: " ' + each_bike.loadCycles : "")
+    p= (each_bike.type == "ebike" ? '"timeRemaining: " ' + each_bike.timeRemaining : "")

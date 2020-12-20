@@ -1,9 +1,10 @@
-p= "id_bike: " + detailStation.id_bike
-p= "name: " + detailStation.name
-p= "type: " + detailStation.type
-p= "weight: " + detailStation.weight
-p= "licensePlate: " + detailStation.licensePlate
-p= "manuafacturingDate: " + detailStation.manuafacturingDate
-p= "producer: " + detailStation.producer
-p= "cost: " + detailStation.cost
-p= "idPark: " + detailStation.idPark
+each each_station in detailStation
+    p= '"id_park": ' + each_station.id_park
+    p= '"stationName: " '+ each_station.stationName
+    p= '"stationAddress: " '+ each_station.stationAddress
+    p= '"numberOfBikes: " '+ each_station.numberOfBikes
+    p= '"numberOfEBikes: " '+ each_station.numberOfEBikes
+    p= '"numberOfTwinBikes: " '+ each_station.numberOfTwinBikes
+    p= '"numberOfEmptyDocks: " '+ each_station.numberOfEmptyDocks
+    p= '"areaToWalk: " '+ each_station.areaToWalk
+    p= '"timeToWalk: " '+ each_station.timeToWalk

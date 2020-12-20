@@ -1,0 +1,50 @@
+each each_bike_4_table in detailBike4Table
+    p= '"id_bike": ' + each_bike_4_table.id_bike
+    p= '"name: " '+ each_bike_4_table.name
+    p= '"type: " '+ each_bike_4_table.type
+    p= '"weight: " '+ each_bike_4_table.weight
+    p= '"licensePlate: " '+ each_bike_4_table.licensePlate
+    p= '"manuafacturingDate: " '+ each_bike_4_table.manuafacturingDate
+    p= '"producer: " '+ each_bike_4_table.producer
+    p= '"cost: " '+ each_bike_4_table.cost
+    p= '"idPark: " '+ each_bike_4_table.idPark
+    p= (each_bike_4_table.type == "ebike" ? '"batteryPercentage: " ' + each_bike_4_table.batteryPercentage : "")
+    p= (each_bike_4_table.type == "ebike" ? '"loadCycles: " ' + each_bike_4_table.loadCycles : "")
+    p= (each_bike_4_table.type == "ebike" ? '"timeRemaining: " ' + each_bike_4_table.timeRemaining : "")
+    br
+
+
+    p= '"id_park": ' + each_bike_4_table.id_park
+    p= '"stationName: " ' + each_bike_4_table.stationName
+    p= '"stationAddress: " ' + each_bike_4_table.stationAddress
+    p= '"numberOfBikes: " ' + each_bike_4_table.numberOfBikes
+    p= '"numberOfEBikes: " ' + each_bike_4_table.numberOfEBikes
+    p= '"numberOfTwinBikes: " ' + each_bike_4_table.numberOfTwinBikes
+    p= '"numberOfEmptyDocks: " ' + each_bike_4_table.numberOfEmptyDocks
+    p= '"areaToWalk: " ' + each_bike_4_table.areaToWalk
+    p= '"timeToWalk: " ' + each_bike_4_table.timeToWalk
+    br
+
+
+    p= '"id_card: " ' + each_bike_4_table.id_card
+    p= '"cardholderName": ' + each_bike_4_table.cardholderName
+    p= '"cardNumber: " ' + each_bike_4_table.cardNumber
+    p= '"issuingBank: " ' + each_bike_4_table.issuingBank
+    p= '"expirationDate: " ' + each_bike_4_table.expirationDate
+    p= '"securityCode: " ' + each_bike_4_table.securityCode
+    p= 'idBike": " ' + each_bike_4_table.idBike
+    p= 'money": " ' + each_bike_4_table.money
+    br
+
+
+    p= '"id_order: " ' + each_bike_4_table.id_order
+    //p= '"id_card: " ' + each_bike_4_table.id_card
+    //p= '"id_bike: " ' + each_bike_4_table.id_bike
+    //p= '"id_park: " ' + each_bike_4_table.id_park
+    p= '"predict_cost: " ' + each_bike_4_table.predict_cost
+    p= '"real_cost: " ' + each_bike_4_table.real_cost
+    p= '"time_renting: " ' + each_bike_4_table.time_renting
+    p= '"time_return: " ' + each_bike_4_table.time_return
+    br
+    hr
+

@@ -33,29 +33,34 @@ app.use('/all_bike', get_all_bike);
 
 //3.Lấy thông tin detail của bãi xe
 var get_detail_station = require('./controller/03_get_detail_station/get_detail_station');
-app.use('/detail_station/:id_station', get_detail_station);
+app.use('/detail_station', get_detail_station);
 
 
 
 //4.Lấy thông tin detail của xe
 var get_detail_bike = require('./controller/04_get_detail_bike/get_detail_bike');
-app.use('/detail_bike/:id_bike', get_detail_bike);
+app.use('/detail_bike', get_detail_bike);
 
 
 
 //5.search thông tin bãi xe
 var search_station = require('./controller/05_search_station_detail/search_station_detail');
-app.use('/search_station/:station_name', search_station);
+app.use('/search_station/', search_station);
 
 
 
-//6.Thanh toán
+//6.Thanh toán trước khi thuê
 var pay_before_rent = require('./controller/06_pay_before_rent/pay_before_rent');
 app.use('/pay_before_rent', pay_before_rent);
 
 
 
-//7.
+//7.Xác nhận thanh toán trước khi thuê
+
+
+
+
+
 //8.Thêm mới một bãi xe
 var add_station = require('./controller/08_add_station/add_station');
 app.use('/add_station', add_station);
@@ -88,7 +93,7 @@ app.use('/update_bike', update_bike);
 
 //13.search search xe
 var search_bike = require('./controller/13_search_bike/search_bike');
-app.use('/search_bike/:bike_name', search_bike);
+app.use('/search_bike/', search_bike);
 
 
 
@@ -97,20 +102,21 @@ var delete_bike = require('./controller/14_delete_bike/delete_bike');
 app.use('/delete_bike', delete_bike);
 
 
-
-//15.lấy thông tin xe thuê từ idXe
+//
+//15.lấy thông tin xe thuê từ idXe (trước khi thuê xe, trả về lịch sử thuê xe và xem xem có được thuê hay không)
 var get_rent_bike_by_id = require('./controller/15_get_rent_bike_by_id/get_rent_bike_by_id');
 app.use('/get_rent_bike_by_id', get_rent_bike_by_id);
 
 
-
+//Khi người dùng ấn nút thanh toán, API số 16 sẽ được gọi, các thông tin về xe sẽ đang thuê sẽ đc trả về
+//xem có muốn trả hay không, nếu có thì sẽ gọi API số 18
 //16.thanh toán xe muốn thuê
 var pay_after_rent = require('./controller/16_pay_after_rent/pay_after_rent');
 app.use('/pay_after_rent', pay_after_rent);
 
 
 
-//17.Lấy thông tin xe đang thuê
+//17.Lấy thông tin tất cả xe thuê của id_users
 var get_renting_bike_information = require('./controller/17_get_renting_bike_information/get_renting_bike_information');
 app.use('/get_renting_bike_information', get_renting_bike_information);
 
