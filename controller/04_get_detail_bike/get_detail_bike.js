@@ -1,5 +1,5 @@
 var express = require('express');
-
+var jsonFormat = require('../json.js');
 var router = express.Router();
 module.exports = router;
 
@@ -13,6 +13,7 @@ router.get('/:id_bike', (req, res) => {//
         // };
         // res.render('04_get_detail_bike'/*.pug*/, vm);
         res.set({ 'content-type': 'application/json; charset=utf-8' });
-        res.end(JSON.stringify(detailBike));
+        // res.end(JSON.stringify(detailBike));
+        jsonFormat.success(req, res, detailBike);
     });
 });
