@@ -56,8 +56,8 @@ app.use('/pay_before_rent', pay_before_rent);
 
 
 //7.Xác nhận thanh toán trước khi thuê
-
-
+var submit_pay_before_rent = require('./controller/07_submit_pay_before_rent/submit_pay_before_rent');
+app.use('/submit_pay_before_rent', submit_pay_before_rent);
 
 
 

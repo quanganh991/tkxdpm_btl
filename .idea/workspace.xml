@@ -4,40 +4,10 @@
     <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/02_get_all_bike/get_all_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/02_get_all_bike/get_all_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/03_get_detail_station/get_detail_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/03_get_detail_station/get_detail_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/04_get_detail_bike/get_detail_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/04_get_detail_bike/get_detail_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/05_search_station_detail/search_station_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/05_search_station_detail/search_station_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/06_pay_before_rent/pay_before_rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/06_pay_before_rent/pay_before_rent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/08_add_station/add_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/08_add_station/add_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/09_update_station/update_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/09_update_station/update_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/11_add_bike/add_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/11_add_bike/add_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/12_update_bike/update_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/12_update_bike/update_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/13_search_bike/search_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/13_search_bike/search_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/15_get_rent_bike_by_id/get_rent_bike_by_id.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/15_get_rent_bike_by_id/get_rent_bike_by_id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/02_repo_get_all_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/02_repo_get_all_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/03_repo_get_detail_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/03_repo_get_detail_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/04_repo_get_detail_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/04_repo_get_detail_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/05_repo_search_station_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/05_repo_search_station_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repos/06_repo_pay_before_rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/06_repo_pay_before_rent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/08_repo_add_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/08_repo_add_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/09_repo_update_station.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/09_repo_update_station.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/11_repo_add_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/11_repo_add_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/12_repo_update_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/12_repo_update_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/13_repo_search_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/13_repo_search_bike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/15_repo_get_rent_bike_by_id.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/15_repo_get_rent_bike_by_id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/01_get_all_station.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/01_get_all_station.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/02_get_all_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/02_get_all_bike.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/03_get_detail_station.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/03_get_detail_station.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/04_get_detail_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/04_get_detail_bike.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/05_search_station_detail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/05_search_station_detail.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/06_pay_before_rent.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/06_pay_before_rent.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/08_add_station.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/08_add_station.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/09_update_station.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/09_update_station.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/11_add_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/11_add_bike.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/12_update_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/12_update_bike.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/13_search_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/13_search_bike.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/15_get_rent_bike_by_id.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/15_get_rent_bike_by_id.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Pug File" />
         <option value="JavaScript File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
@@ -109,7 +79,7 @@
       <workItem from="1608283219015" duration="9404000" />
       <workItem from="1608348567995" duration="2269000" />
       <workItem from="1608361413266" duration="10441000" />
-      <workItem from="1608434495876" duration="914000" />
+      <workItem from="1608434495876" duration="12716000" />
     </task>
     <servers />
   </component>

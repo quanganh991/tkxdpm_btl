@@ -1,1 +1,33 @@
-p= result
+if (result == false)
+    h3= '"result: "' + result
+    p= '"reason: "' + reason
+else
+    h3= "result: " + result
+    p= '"id_bike: " '+ is_bike_still_in_park.id_bike
+    p= '"name: " '+ is_bike_still_in_park.name
+    p= '"type: " '+ is_bike_still_in_park.type
+    p= '"weight: " '+ is_bike_still_in_park.weight
+    p= '"licensePlate: " '+ is_bike_still_in_park.licensePlate
+    p= '"manuafacturingDate: " '+ is_bike_still_in_park.manuafacturingDate
+    p= '"producer: " '+ is_bike_still_in_park.producer
+    p= '"cost: " '+ is_bike_still_in_park.cost
+    p= '"idPark: " '+ is_bike_still_in_park.idPark
+    p= (is_bike_still_in_park.type == "ebike" ? '"batteryPercentage: " ' + is_bike_still_in_park.batteryPercentage : "")
+    p= (is_bike_still_in_park.type == "ebike" ? '"loadCycles: " ' + is_bike_still_in_park.loadCycles : "")
+    p= (is_bike_still_in_park.type == "ebike" ? '"timeRemaining: " ' + is_bike_still_in_park.timeRemaining : "")
+    br
+
+    p= '"id_card: " ' + is_user_renting_a_bike.id_card
+    p= '"cardholderName: " ' + is_user_renting_a_bike.cardholderName
+    p= '"cardNumber: " ' + is_user_renting_a_bike.cardNumber
+    p= '"issuingBank: " ' + is_user_renting_a_bike.issuingBank
+    p= '"expirationDate: " ' + is_user_renting_a_bike.expirationDate
+    p= '"securityCode: " ' + is_user_renting_a_bike.securityCode
+    p= '"idBike : " ' + is_user_renting_a_bike.idBike
+    p= '"money: " ' + is_user_renting_a_bike.money
+    br
+
+    p= '"first_money: " ' + does_id_card_have_enoght_money.condizione
+    br
+
+    p= '"money_after_rent: "' + (parseInt(is_user_renting_a_bike.money) - parseInt(does_id_card_have_enoght_money.condizione))
