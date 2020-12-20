@@ -1,0 +1,51 @@
+if (result == false)
+    h3= '"result: "' + result
+    p= '"reason: "' + reason
+else
+    h3= "result: " + result
+
+    p= '"id_bike: " ' + get_all_return_information.id_bike
+    p= '"name: " ' + get_all_return_information.name
+    p= '"type: " ' + get_all_return_information.type
+    p= '"weight: " ' + get_all_return_information.weight
+    p= '"licensePlate: " ' + get_all_return_information.licensePlate
+    p= '"manuafacturingDate: " ' + get_all_return_information.manuafacturingDate
+    p= '"producer: " ' + get_all_return_information.producer
+    p= '"cost: " ' + get_all_return_information.cost
+    p= '"idPark: " ' + get_all_return_information.idPark
+    p= (get_all_return_information.type == "ebike" ? '"batteryPercentage: " ' + get_all_return_information.batteryPercentage : "")
+    p= (get_all_return_information.type == "ebike" ? '"loadCycles: " ' + get_all_return_information.loadCycles : "")
+    p= (get_all_return_information.type == "ebike" ? '"timeRemaining: " ' + get_all_return_information.timeRemaining : "")
+    br
+
+    p= '"id_card: " ' + get_all_return_information.id_card
+    p= '"cardholderName: " ' + get_all_return_information.cardholderName
+    p= '"cardNumber: " ' + get_all_return_information.cardNumber
+    p= '"issuingBank: " ' + get_all_return_information.issuingBank
+    p= '"expirationDate: " ' + get_all_return_information.expirationDate
+    p= '"securityCode: " ' + get_all_return_information.securityCode
+    p= '"idBike : " ' + get_all_return_information.idBike
+    p= '"money: " ' + get_all_return_information.money
+    br
+
+    p= '"id_order: " ' + get_all_return_information.id_order
+    p= '"id_card: " ' + get_all_return_information.id_card
+    p= '"id_bike: " ' + get_all_return_information.id_bike
+    p= '"id_park: " ' + get_all_return_information.id_park
+    p= '"predict_cost: " ' + get_all_return_information.predict_cost
+    p= '"real_cost: " ' + get_all_return_information.real_cost
+    p= '"time_renting : " ' + get_all_return_information.time_renting
+    p= '"time_return: " ' + get_all_return_information.time_return
+    br
+
+    each each_slot, index in is_there_any_slot
+        p= '"id_park: " ' + each_slot.id_park
+        p= '"stationName: " ' + each_slot.stationName
+        p= '"stationAddress: " ' + each_slot.stationAddress
+        p= '"numberOfBikes: " ' + each_slot.numberOfBikes
+        p= '"numberOfEBikes: " ' + each_slot.numberOfEBikes
+        p= '"numberOfTwinBikes: " ' + each_slot.numberOfTwinBikes
+        p= '"numberOfEmptyDocks : " ' + each_slot.numberOfEmptyDocks
+        p= '"areaToWalk: " ' + each_slot.areaToWalk
+        p= '"timeToWalk: " ' + each_slot.timeToWalk
+        br

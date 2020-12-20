@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="" />
+    <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/16_pay_after_rent/pay_after_rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/16_pay_after_rent/pay_after_rent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/18_register_return_bike/register_return_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/18_register_return_bike/register_return_bike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fn/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/fn/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/16_repo_pay_after_rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/16_repo_pay_after_rent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/18_repo_register_return_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/18_repo_register_return_bike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/16_pay_after_rent.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/16_pay_after_rent.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/18_register_return_bike.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/18_register_return_bike.pug" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,13 +98,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608369140245" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1608367378985">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1608455692679">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1608367378985" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608084221337">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1608455692679" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608450270547">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608084221337" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608450270547" />
   </component>
 </project>
