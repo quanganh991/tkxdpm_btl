@@ -1,5 +1,5 @@
 var express = require('express');
-
+var jsonFormat = require('../json.js');
 var router = express.Router();
 module.exports = router;
 
@@ -26,7 +26,10 @@ router.post('/', (req, res) => {//
         var vm = {
                 result: "false, không thể tăng số numberOfEmptyDocks"
             };
-            res.render('09_update_station', vm);
+            // res.render('09_update_station', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(vm));
+            jsonFormat.success(req, res, vm);
         }
     )
 
@@ -35,7 +38,10 @@ router.post('/', (req, res) => {//
             var vm = {
                 result: "false, không thể set_idBike_in_card"
             };
-            res.render('09_update_station', vm);
+            // res.render('09_update_station', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(vm));
+            jsonFormat.success(req, res, vm);
         }
     )
 
@@ -44,7 +50,10 @@ router.post('/', (req, res) => {//
             var vm = {
                 result: "false, không thể set_idPark_null_in_bike"
             };
-            res.render('09_update_station', vm);
+            // res.render('09_update_station', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(vm));
+            jsonFormat.success(req, res, vm);
         }
     )
 
@@ -52,14 +61,20 @@ router.post('/', (req, res) => {//
         var vm = {
             result: "true"
         };
-        res.render('09_update_station', vm)
+        // res.render('09_update_station', vm)
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        // res.end(JSON.stringify(vm));
+        jsonFormat.success(req, res, vm);
     }).catch(
         err => {
             console.log("--------------------err = " +err.toString())
             var vm = {
                 result: "false, không thể tạo order"
             };
-            res.render('09_update_station', vm);
+            // res.render('09_update_station', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(vm));
+            jsonFormat.success(req, res, vm);
         }
     )
 });

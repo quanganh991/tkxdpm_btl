@@ -1,5 +1,5 @@
 var express = require('express');
-
+var jsonFormat = require('../json.js');
 var router = express.Router();
 module.exports = router;
 
@@ -31,6 +31,9 @@ router.post('/', (req, res) => {//
                 reason : "Vui lòng chọn bãi đậu xe để xác nhận trả xe"
             }
         }
-        res.render('18_register_return_bike'/*.pug*/, vm);
+        // res.render('18_register_return_bike'/*.pug*/, vm);
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        // res.end(JSON.stringify(all_parks));
+        jsonFormat.success(req, res, vm);
     });
 });

@@ -1,5 +1,5 @@
 var express = require('express');
-
+var jsonFormat = require('../json.js');
 var router = express.Router();
 module.exports = router;
 
@@ -40,7 +40,10 @@ router.post('/', (req, res) => {
             var vm = {
                 result: "false, không thể update_bike"
             };
-            res.render('16_pay_after_rent', vm);
+            // res.render('16_pay_after_rent', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(all_parks));
+            jsonFormat.success(req, res, vm);
         }
     )
 
@@ -49,7 +52,10 @@ router.post('/', (req, res) => {
             var vm = {
                 result: "false, không thể update_card"
             };
-            res.render('16_pay_after_rent', vm);
+            // res.render('16_pay_after_rent', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(all_parks));
+            jsonFormat.success(req, res, vm);
         }
     )
 
@@ -58,7 +64,10 @@ router.post('/', (req, res) => {
             var vm = {
                 result: "false, không thể update_order_bike"
             };
-            res.render('16_pay_after_rent', vm);
+            // res.render('16_pay_after_rent', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(all_parks));
+            jsonFormat.success(req, res, vm);
         }
     )
 
@@ -66,14 +75,20 @@ router.post('/', (req, res) => {
         var vm = {
             result: "true"
         };
-        res.render('16_pay_after_rent', vm)
+        // res.render('16_pay_after_rent', vm)
+        res.set({ 'content-type': 'application/json; charset=utf-8' });
+        // res.end(JSON.stringify(all_parks));
+        jsonFormat.success(req, res, vm);
     }).catch(
         err => {
             console.log("--------------------err = " +err.toString())
             var vm = {
                 result: "false, không thể update_park"
             };
-            res.render('16_pay_after_rent', vm);
+            // res.render('16_pay_after_rent', vm);
+            res.set({ 'content-type': 'application/json; charset=utf-8' });
+            // res.end(JSON.stringify(all_parks));
+            jsonFormat.success(req, res, vm);
         }
     )
 });
