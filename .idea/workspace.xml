@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controller/07_submit_pay_before_rent/submit_pay_before_rent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repos/07_repo_submit_pay_before_rent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/07_submit_pay_before_rent.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/06_pay_before_rent/pay_before_rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/06_pay_before_rent/pay_before_rent.js" afterDir="false" />
@@ -79,7 +82,7 @@
       <workItem from="1608283219015" duration="9404000" />
       <workItem from="1608348567995" duration="2269000" />
       <workItem from="1608361413266" duration="10441000" />
-      <workItem from="1608434495876" duration="12716000" />
+      <workItem from="1608434495876" duration="13211000" />
     </task>
     <servers />
   </component>
