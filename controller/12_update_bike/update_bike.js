@@ -12,6 +12,7 @@ router.post('/', (req, res) => {
         {
             id_bike: req.body.id_bike,
             name: req.body.name,
+            type: req.body.type,
             typed: req.body.typed,
             weight: req.body.weight,
             licensePlate: req.body.licensePlate,
@@ -27,6 +28,7 @@ router.post('/', (req, res) => {
                 {
                     id_bike: req.body.id_bike,
                     name: req.body.name,
+                    type: req.body.type,
                     typed: req.body.typed,
                     weight: req.body.weight,
                     licensePlate: req.body.licensePlate,

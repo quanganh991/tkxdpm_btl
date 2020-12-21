@@ -6,6 +6,7 @@ exports.updateBike = bike => {
     ?
         "UPDATE bike SET " +
         "name = '" + bike.name.toString() +"' ," +
+        "type = '" + bike.type.toString() +"' ," +
         "typed = '" + bike.typed.toString() +"' ," +
         "weight = '" + bike.weight.toString() +"' ," +
         "licensePlate = '" + bike.licensePlate.toString() +"' ," +
@@ -19,6 +20,7 @@ exports.updateBike = bike => {
         :
             "UPDATE bike SET " +
             "name = '" + bike.name.toString() +"' ," +
+            "type = '" + bike.type.toString() +"' ," +
             "typed = '" + bike.typed.toString() +"' ," +
             "weight = '" + bike.weight.toString() +"' ," +
             "licensePlate = '" + bike.licensePlate.toString() +"' ," +
