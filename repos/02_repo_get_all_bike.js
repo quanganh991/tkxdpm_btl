@@ -1,10 +1,10 @@
 var db = require('../fn/db');
 exports.getAllBike = (id_station) => {
-    var sql = "select * from bike WHERE idPark = " + id_station.toString();
+    var sql = "select * from bike WHERE idPark = " + id_station.toString() + " AND typed = 'ebike'";
     return db.load(sql);
 }
 
 exports.getAllBikeInAllPark = () => {
-    var sql = "select * from bike";
+    var sql = "select * from bike AND typed = 'ebike'";
     return db.load(sql);
 }
