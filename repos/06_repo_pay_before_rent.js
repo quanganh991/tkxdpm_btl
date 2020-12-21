@@ -12,7 +12,7 @@ exports.is_user_renting_a_bike = (id_card) => {   //đảm bảo rằng id_card 
 
 exports.does_id_card_have_enoght_money = (id_bike , id_card) => {   //đảm bảo rằng trong tài khoản của id_card có đủ tiền để thuê
     var sql = "SELECT * FROM " +
-        "(SELECT *, IF(bike.`typed` = 'ebike',400000,200000) as condizione FROM card, bike where (id_card = "+ id_card +" and id_bike = "+ id_bike +")) as tmp " +
+        "(SELECT *, IF(bike.`type` = 'ebike',400000,200000) as condizione FROM card, bike where (id_card = "+ id_card +" and id_bike = "+ id_bike +")) as tmp " +
         "WHERE tmp.condizione <= tmp.money";
     return db.load(sql);
 }

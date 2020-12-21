@@ -7,13 +7,12 @@ var updateBike = require('../../repos/12_repo_update_bike.js');
 router.post('/', (req, res) => {
     updateBike.updateBike(req.body).then(value => { //req.body = park
         var vm =
-            req.body.typed.toString() == "ebike"
+            req.body.type.toString() == "ebike"
         ?
         {
             id_bike: req.body.id_bike,
             name: req.body.name,
             type: req.body.type,
-            typed: req.body.typed,
             weight: req.body.weight,
             licensePlate: req.body.licensePlate,
             manuafacturingDate: req.body.manuafacturingDate,
@@ -29,7 +28,6 @@ router.post('/', (req, res) => {
                     id_bike: req.body.id_bike,
                     name: req.body.name,
                     type: req.body.type,
-                    typed: req.body.typed,
                     weight: req.body.weight,
                     licensePlate: req.body.licensePlate,
                     manuafacturingDate: req.body.manuafacturingDate,

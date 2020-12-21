@@ -15,7 +15,7 @@ router.get('', (req, res) => {//
 
 
     //
-    if(stationName != null && stationAddress != null) {
+    if(stationName != null && stationAddress != null) { //nếu không nhập cả 2 thì gọi all_station
         var allStationMatch = searchStationDetailBy2Keyword.searchStationDetailBy2Keyword(stationName, stationAddress);
         Promise.all([allStationMatch]).then(([allStationMatch]) => {
             // var vm = {

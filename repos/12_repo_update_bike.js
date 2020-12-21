@@ -2,12 +2,11 @@ var db = require('../fn/db');
 
 exports.updateBike = bike => {
     var sql =
-        bike.typed.toString() == "ebike"
+        bike.type.toString() == "ebike"
     ?
         "UPDATE bike SET " +
         "name = '" + bike.name.toString() +"' ," +
-        "type = '" + bike.type.toString() +"' ," +
-        "typed = '" + bike.typed.toString() +"' ," +
+        "`type` = '" + bike.type.toString() +"' ," +
         "weight = '" + bike.weight.toString() +"' ," +
         "licensePlate = '" + bike.licensePlate.toString() +"' ," +
         "manuafacturingDate = '" + bike.manuafacturingDate.toString() +"' ," +
@@ -20,8 +19,7 @@ exports.updateBike = bike => {
         :
             "UPDATE bike SET " +
             "name = '" + bike.name.toString() +"' ," +
-            "type = '" + bike.type.toString() +"' ," +
-            "typed = '" + bike.typed.toString() +"' ," +
+            "`type` = '" + bike.type.toString() +"' ," +
             "weight = '" + bike.weight.toString() +"' ," +
             "licensePlate = '" + bike.licensePlate.toString() +"' ," +
             "manuafacturingDate = '" + bike.manuafacturingDate.toString() +"' ," +
