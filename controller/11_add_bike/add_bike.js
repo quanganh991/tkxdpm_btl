@@ -7,11 +7,11 @@ var addBike = require('../../repos/11_repo_add_bike.js');
 router.post('/', (req, res) => {
     addBike.addBike(req.body).then(value => { //req.body = park
         var vm =
-            req.body.type.toString() == "ebike"
+            req.body.typed.toString() == "ebike"
                 ?
                 {
                     name: req.body.name,
-                    type: req.body.type,
+                    typed: req.body.typed,
                     weight: req.body.weight,
                     licensePlate: req.body.licensePlate,
                     manuafacturingDate: req.body.manuafacturingDate,
@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
                 :
                 {
                     name: req.body.name,
-                    type: req.body.type,
+                    typed: req.body.typed,
                     weight: req.body.weight,
                     licensePlate: req.body.licensePlate,
                     manuafacturingDate: req.body.manuafacturingDate,

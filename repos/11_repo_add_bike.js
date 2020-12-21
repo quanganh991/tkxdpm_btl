@@ -2,11 +2,11 @@ var db = require('../fn/db');
 
 exports.addBike = bike => {
     var sql =
-        bike.type == "ebike"
+        bike.typed == "ebike"
     ?
-        "INSERT INTO bike (name, type, weight,licensePlate, manuafacturingDate, producer, cost, idPark,batteryPercentage,loadCycles,timeRemaining) VALUES" +
+        "INSERT INTO bike (name, typed, weight,licensePlate, manuafacturingDate, producer, cost, idPark,batteryPercentage,loadCycles,timeRemaining) VALUES" +
         " ('"+ bike.name +"' ," +
-        "'" + bike.type +"' ," +
+        "'" + bike.typed +"' ," +
         "'" + bike.weight +"' ," +
         "'" + bike.licensePlate +"' ," +
         "'" + bike.manuafacturingDate +"' ," +
@@ -17,9 +17,9 @@ exports.addBike = bike => {
         "'" + bike.loadCycles +"' ," +
         "'" + bike.timeRemaining +"' )"
     :
-            "INSERT INTO bike (name, type, weight,licensePlate, manuafacturingDate, producer, cost, idPark) VALUES" +
+            "INSERT INTO bike (name, typed, weight,licensePlate, manuafacturingDate, producer, cost, idPark) VALUES" +
             " ('"+ bike.name +"' ," +
-            "'" + bike.type +"' ," +
+            "'" + bike.typed +"' ," +
             "'" + bike.weight +"' ," +
             "'" + bike.licensePlate +"' ," +
             "'" + bike.manuafacturingDate +"' ," +

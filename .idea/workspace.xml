@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="32c97aa4-4b26-437c-9bac-24eaaaa97d72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/11_add_bike/add_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/11_add_bike/add_bike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/12_update_bike/update_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/12_update_bike/update_bike.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repos/02_repo_get_all_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/02_repo_get_all_bike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/06_repo_pay_before_rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/06_repo_pay_before_rent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/11_repo_add_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/11_repo_add_bike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/12_repo_update_bike.js" beforeDir="false" afterPath="$PROJECT_DIR$/repos/12_repo_update_bike.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,7 @@
       <workItem from="1608361413266" duration="10441000" />
       <workItem from="1608434495876" duration="13211000" />
       <workItem from="1608517910851" duration="9416000" />
-      <workItem from="1608538025775" duration="1236000" />
+      <workItem from="1608538025775" duration="2987000" />
     </task>
     <servers />
   </component>
