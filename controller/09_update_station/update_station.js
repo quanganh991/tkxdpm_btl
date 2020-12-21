@@ -7,7 +7,6 @@ var updateStation = require('../../repos/09_repo_update_station.js');
 router.post('/', (req, res) => {
     updateStation.updateStation(req.body).then(value => {
         var vm = {
-
                 id_park: req.body.id_park,
                 stationName: req.body.stationName,
                 stationAddress: req.body.stationAddress,
@@ -23,7 +22,7 @@ router.post('/', (req, res) => {
         res.end(JSON.stringify(vm));
     }).catch(err => {
         var vm = {
-            result: "false"
+            result: "Failed"
         };
         console.log("-----------------------errr = "+err.toString());
         // res.render('09_update_station', vm);
