@@ -6,6 +6,6 @@ exports.searchStationDetail = (keyword) => {
 }
 
 exports.searchStationDetailBy2Keyword = (station, address) => {
-    var sql = "select * from park where stationName like '%" + station + "%' or stationAddress like '%" + address + "%'";
+    var sql = "select * from park where stationName like '%" + station + "%' AND stationAddress like '%" + address + "%'";
     return db.load(sql);
 }

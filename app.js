@@ -43,9 +43,9 @@ app.use('/detail_bike', get_detail_bike);
 
 
 
-//5.search thông tin bãi xe
-var search_station = require('./controller/05_search_station_detail/search_station_detail');
-app.use('/search_station/', search_station);
+// //5.search thông tin bãi xe
+// var search_station = require('./controller/05_search_station_detail/search_station_detail');
+// app.use('/search_station/', search_station);
 
 
 
